@@ -8,8 +8,7 @@ body {
     background-color: #F0F0F0;
 }
 
-.menu {
-    display: flex;
+.fondoMenu {
     background-color: #b31d15;
 }
 
@@ -113,4 +112,17 @@ footer .logo {
     text-decoration: none;
     color: white;
     font-size: 15px;
+}
+
+
+ul .dropdown-menu {
+    background-color: #b31d15;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #9d1811;    
+}
+
+.carousel-grid {
+    display: grid ;
 }
