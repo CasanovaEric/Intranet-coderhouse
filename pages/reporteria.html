@@ -10,58 +10,86 @@
 </head>
 
 <body>
-   <header>
-        <nav class="navbar navbar-expand-lg fondoMenu">
-  <div class="container-fluid">
-    <img class="navbar-brand logo" src="../img/logo.png">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-light fs-5" aria-current="page" href="../index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light fs-5" href="documentosProcesos.html">Documentos y Procesos</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light fs-5" href="recursosHumanos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Recursos Humanos
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item text-light" href="#">Directorio</a></li>
-            <li><a class="dropdown-item text-light" href="#">Reportes y Solicitudes</a></li>
-          </ul>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link text-light fs-5" href="marketing.html">Marketing</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link text-light fs-5" href="ofertaAcademica.html">Oferta Academica</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    </header>
+ <!-- Barra de navegación con logo -->
+  <header>
+    <nav class="navbar navbar-expand-lg fondoMenu">
+      <div class="container-fluid">
+        <div class="container d-flex align-items-center">
+          <img class="navbar-brand logo" src="../img/logo.png">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+
+              <li class="nav-item">
+                <a class="nav-link active text-light fs-5" href="../index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light fs-5" href="documentosProcesos.html">
+                  Documentos y Procesos
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light fs-5" href="recursosHumanos.html" role="button"
+                  data-bs-toggle="dropdown">
+                  Recursos Humanos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-light" href="#">Directorio</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Reportes y Solicitudes</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light fs-5" href="marketing.html">Marketing</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light fs-5" href="ofertaAcademica.html">
+                  Oferta Académica
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
     <main>
         <h1 class="titulo">Reporteria</h1>
 
         <!-- Footer -->
-        <footer>
-            <div class="logo"> <a href="index.html"><img class="logo" src="../img/logo.png"></a></div>
-            <div>
-                <ul class="footerNavegacion">
-                    <li><a href="pages/documentosProcesos.html">Documentos y Procesos</a></li>
-                    <li><a href="pages/marketing.html">Marketing</a></li>
-                    <li><a href="pages/ofertaAcademica.html">Oferta Academica</a></li>
-                    <li><a href="pages/operativa.html">Operativa</a></li>
-                    <li><a href="pages/recursosHumanos.html">Recursos Humanos</a></li>
-                    <li><a href="pages/reporteria.html">Reporteria</a></li>
-                </ul>
-            </div>
-        </footer>
+  <footer class="container-fluid bg-black">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between flex-wrap py-4">
+        <div class="logo">
+          <a href="index.html">
+            <img class="logo" src="../img/logo.png">
+          </a>
+        </div>
+        <div>
+          <ul class="footerNavegacion d-flex gap-4 mb-0">
+            <li><a href="documentosProcesos.html">Documentos y Procesos</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li><a href="ofertaAcademica.html">Oferta Academica</a></li>
+            <li><a href="operativa.html">Operativa</a></li>
+            <li><a href="recursosHumanos.html">Recursos Humanos</a></li>
+            <li><a href="reporteria.html">Reporteria</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
     </main>
 </body>
 

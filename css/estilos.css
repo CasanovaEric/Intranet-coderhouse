@@ -9,6 +9,7 @@ body {
 
 }
 
+
 .fondoMenu {
     background-color: #b31d15;
 }
@@ -36,8 +37,6 @@ body {
 
 .titulo {
     padding-top: 50px;
-    padding-left: 25px;
-    padding-bottom: 20px;
 }
 
 .carrusel {
@@ -179,4 +178,12 @@ tfoot th {
 
 tfoot td {
   font-weight: bold;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
