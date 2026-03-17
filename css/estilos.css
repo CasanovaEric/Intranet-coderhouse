@@ -1,189 +1,30 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-body {
-    background-color: #F0F0F0;
-
-}
-
 
 .fondoMenu {
-    background-color: #b31d15;
+  background-color: #b31d15;
 }
 
 .logo {
-    padding: 20px;
-    width: 150px;
-    height: 80px;
+  padding: 20px;
+  width: 150px;
+  height: 80px;
 }
 
 .navegacion {
-    display: flex;
-    list-style: none;
-    padding-top: 25px;
-    padding-left: 40px;
-
+  display: flex;
+  list-style: none;
+  padding-top: 25px;
+  padding-left: 40px;
 }
-
 .navegacion a {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    padding-left: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  padding-left: 40px;
 }
 
-.titulo {
-    padding-top: 50px;
-}
-
-.carrusel {
-    display: flex;
-}
-
-.carrusel li {
-    list-style: none;
-}
-
-.imagenCarrusel {
-    width: 450px;
-    height: auto; 
-}
-
-.evento {
-    display: flex;
-    padding-left: 25px;
-
-}
-
-.evento p {
-    padding-left: 20px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-button {
-    margin-left: 25px;
-    background-color: #b31d15;
-    color: white;
-    padding: 10px 15px 10px 15px;
-}
-
-.cumpleanos {
-    display: flex;
-    padding-left: 25px;
-    padding-bottom: 45px;
-}
-
-.cumpleanero {
-    padding-left: 25px;
-    text-align: center;
-}
-
-.cumplecard {
-
-    padding:20px;
-    border: 1px solid #656464;
-    border-radius: 16px;
-    background-color:#F0F0F0;
-    margin-right: 25px;
-}
-
-.cumplecard h4 {
-    padding-top:20px;
-}
-
-.fotoCumpleanero {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-}
-
-footer {
-    background-color: black;
-    display: flex;
-}
-
-footer .logo {
-    padding-top: 10px;
-}
-
-.footerNavegacion {
-    display: flex;
-    list-style: none;
-    padding-top: 35px;
-    padding-left: 35px;
-    padding-bottom: 35px;
-}
-
-.footerNavegacion a {
-    padding-top: 35px;
-    padding-left: 25px;
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-}
-
-
-ul .dropdown-menu {
-    background-color: #b31d15;
-}
-
-.dropdown-menu li a:hover {
-    background-color: #9d1811;    
-}
-
-.carousel-grid {
-    display: grid ;
-}
-
-table {
-  border-collapse: collapse;
-  border: 2px solid rgb(140 140 140);
-  font-family: sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-}
-
-caption {
-  caption-side: bottom;
-  padding: 10px;
-  font-weight: bold;
-}
-
-thead,
-tfoot {
-  background-color: rgb(228 240 245);
-}
-
-th,
-td {
-  border: 1px solid rgb(160 160 160);
-  padding: 8px 10px;
-}
-
-td:last-of-type {
-  text-align: center;
-}
-
-tbody > tr:nth-of-type(even) {
-  background-color: rgb(237 238 242);
-}
-
-tfoot th {
-  text-align: right;
-}
-
-tfoot td {
-  font-weight: bold;
-}
-
-.banner {
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
+/*# sourceMappingURL=estilos.css.map */

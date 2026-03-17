@@ -1,0 +1,29 @@
+@mixin flexNav {
+    display: flex;
+    list-style: none;
+}
+
+@mixin cumpleanos {
+    display: flex;
+    padding-left: 25px;
+    padding-bottom: 45px;
+}
+
+@mixin cumpleanero {
+    padding-left: 25px;
+    text-align: center;
+}
+
+@mixin cumpleCard {
+    padding:20px;
+    border: 1px solid #656464;
+    border-radius: 16px;
+    background-color:#F0F0F0;
+    margin-right: 25px;
+}
+
+@mixin fotocumpleanero {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
