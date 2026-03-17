@@ -25,3 +25,88 @@
 }
 
 }
+
+.titulo {
+    padding-top: 50px;
+}
+
+.carrusel {
+    display: flex;
+
+    li {
+        list-style: none;
+    }
+}
+
+.imagenCarrusel {
+    @include carrusel; 
+}
+
+.evento {
+    display: flex;
+    padding-left: 25px;
+    p {
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+}
+
+.cumpleanos {
+@include cumpleanos;
+}
+
+.cumpleanero {
+   @include cumpleanero;
+}
+
+.cumplecard {
+    @include cumpleCard; 
+    h4 {padding-top:20px;
+    }
+    
+}
+
+.fotoCumpleanero {
+    @include fotocumpleanero;
+}
+
+.carousel-grid {
+    display: grid ;
+}
+
+table {
+    @include tablas; 
+}
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
