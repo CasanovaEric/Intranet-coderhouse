@@ -1,7 +1,7 @@
 //variables
 @use "../utilities/variables" as *;
 //mixin 
-@use "../utilities/mixin" as *; 
+@use "../utilities/mixin" as *;
 
 .fondoMenu {
     background-color: $color-principal;
@@ -17,12 +17,13 @@
     @include flexNav;
     padding-top: 25px;
     padding-left: 40px;
+
     a {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    padding-left: 40px;
-}
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        padding-left: 40px;
+    }
 
 }
 
@@ -32,5 +33,24 @@
 
 .titulo {
     padding-top: 50px;
+    padding-bottom: 25px;
 }
 
+.manual {
+    padding-bottom: 45px;
+}
+
+.herramientas {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-bottom: 45px;
+
+}
+
+.imgHerramientas {
+    width: 150px;
+    height: auto;
+    border-radius: 16px;
+
+}

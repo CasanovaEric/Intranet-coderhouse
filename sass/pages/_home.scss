@@ -28,6 +28,7 @@
 
 .titulo {
     padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 .carrusel {
@@ -110,3 +111,8 @@ tfoot th {
 tfoot td {
   font-weight: bold;
 }
+
+.boton {
+    @include boton;
+}
+

@@ -4,9 +4,10 @@
 }
 
 @mixin cumpleanos {
-    display: flex;
-    padding-left: 25px;
-    padding-bottom: 45px;
+   display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-bottom: 45px;
 }
 
 @mixin cumpleanero {
@@ -37,6 +38,8 @@
     margin-left: 25px;
     background-color: #b31d15;
     color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
 
 }
 
