@@ -2,70 +2,145 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Marketing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Marketing</title>
 </head>
 
 <body>
-<!-- Barra de navegación con logo -->
   <header>
     <nav class="navbar navbar-expand-lg fondoMenu">
       <div class="container-fluid">
         <div class="container d-flex align-items-center">
           <img class="navbar-brand logo" src="../img/logo.png">
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
-
-              <li class="nav-item">
-                <a class="nav-link active text-light fs-5" href="../index.html">Inicio</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link text-light fs-5" href="documentosProcesos.html">
-                  Documentos y Procesos
-                </a>
-              </li>
-
+              <li class="nav-item"><a class="nav-link text-light fs-5" href="../index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link text-light fs-5" href="documentosProcesos.html">Documentos y Procesos</a></li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light fs-5" href="recursosHumanos.html" role="button"
-                  data-bs-toggle="dropdown">
-                  Recursos Humanos
-                </a>
+                <a class="nav-link text-light fs-5 d-inline-block" href="recursosHumanos.html">Recursos Humanos</a>
+                <a class="nav-link dropdown-toggle text-light d-inline-block" href="#" role="button" data-bs-toggle="dropdown"></a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item text-light" href="#">Directorio</a></li>
-                  <li><a class="dropdown-item text-light" href="#">Reportes y Solicitudes</a></li>
+                  <li><a class="dropdown-item" href="reportesSolicitudes.html">Reportes y Solicitudes</a></li>
                 </ul>
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link text-light fs-5" href="marketing.html">Marketing</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link text-light fs-5" href="ofertaAcademica.html">
-                  Oferta Académica
-                </a>
-              </li>
-
+              <li class="nav-item"><a class="nav-link text-light fs-5" href="marketing.html">Marketing</a></li>
             </ul>
           </div>
-
         </div>
       </div>
     </nav>
   </header>
-    <h1 class="titulo">Marketing</h1>
+
+  <main>
+    <div>
+      <img src="../img/marketing.jpg" class="banner w-100" style="height: 300px; object-fit: cover;">
+    </div>
+
+    <div class="container my-5">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h1 class="titulo">Marketing</h1>
+          <p class="lead">Bienvenido al departamento de Marketing. Aquí encontrarás los recursos más comunes y podrás realizar pedidos específicos.</p>
+        </div>
+      </div>
+
+      <div class="row g-5">
+        
+        <div class="col-lg-6">
+          <h2 class="titulo h4 mb-3">Solicitudes a Marketing</h2>
+          <p class="text-muted small">Completa el formulario para solicitar piezas gráficas o contenido.</p>
+          
+          <div class="card" style="border: 1px solid #f0f0f0; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 10px;">
+            <div class="card-body p-4">
+              <form action="#" method="POST">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold small">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Tu nombre" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold small">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Tu apellido" required>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold small">Correo Electrónico</label>
+                  <input type="email" class="form-control" placeholder="correo@empresa.com" required>
+                </div>
+                <hr class="text-muted my-4">
+                <div class="row align-items-end mb-3">
+                  <div class="col-md-8">
+                    <label class="form-label fw-bold small">Tipo de Pedido</label>
+                    <select class="form-select" required>
+                      <option value="" selected disabled>Seleccione...</option>
+                      <option>Imágenes</option>
+                      <option>Copys</option>
+                      <option>Banners</option>
+                      <option>Redes Sociales</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label fw-bold small">Cantidad</label>
+                    <input type="number" class="form-control" min="1" placeholder="Ej: 3">
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label class="form-label fw-bold small">Objetivos</label>
+                  <textarea class="form-control" rows="3" placeholder="Describe qué buscas..."></textarea>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-3">
+                  <button type="reset" class="boton">Limpiar</button>
+                  <button type="submit" class="boton">Enviar Solicitud</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <h2 class="titulo h4 mb-3">Piezas y contenido para el personal</h2>
+          <p class="text-muted small">Recursos disponibles para tus tareas diarias:</p>
+          
+          <div class="d-flex flex-column gap-4 mt-4">
+            <div class="d-flex align-items-center gap-3">
+              <a href="#">
+                <img src="../img/Documentacion importante.png" class="imgHerramientas" style="width: 80px; height: 80px; object-fit: contain;" alt="Doc">
+              </a>
+              <div>
+                <h5 class="mb-1">Documentación Importante</h5>
+                <p class="small text-muted mb-0">Accede a las guías de marca y documentos oficiales.</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+              <a href="#">
+                <img src="../img/Publicos Objetivos.png" class="imgHerramientas" style="width: 80px; height: 80px; object-fit: contain;" alt="Público">
+              </a>
+              <div>
+                <h5 class="mb-1">Públicos Objetivos</h5>
+                <p class="small text-muted mb-0">Información detallada sobre nuestros perfiles de cliente.</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+              <a href="#">
+                <img src="../img/redes sociales.png" class="imgHerramientas" style="width: 80px; height: 80px; object-fit: contain;" alt="Redes">
+              </a>
+              <div>
+                <h5 class="mb-1">Redes Sociales</h5>
+                <p class="small text-muted mb-0">Descarga los kits para compartir en tus estados y perfiles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> </div> </main>
 
     <!-- Footer -->
   <footer class="container-fluid bg-black">
@@ -78,18 +153,16 @@
         </div>
         <div>
           <ul class="footerNavegacion d-flex gap-4 mb-0">
+            <li><a href="../index.html">Inicio</a></li>
             <li><a href="documentosProcesos.html">Documentos y Procesos</a></li>
-            <li><a href="marketing.html">Marketing</a></li>
-            <li><a href="ofertaAcademica.html">Oferta Academica</a></li>
-            <li><a href="operativa.html">Operativa</a></li>
             <li><a href="recursosHumanos.html">Recursos Humanos</a></li>
-            <li><a href="reporteria.html">Reporteria</a></li>
+            <li><a href="reportesSolicitudes.html">Reporteria</a></li>
+             <li><a href="marketing.html">Marketing</a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

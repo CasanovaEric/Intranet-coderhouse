@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <title>Reportes y Solicitudes</title>
+</head>
+
+<body>
+    <!-- Barra de navegación con logo -->
+  <header>
+    <nav class="navbar navbar-expand-lg fondoMenu">
+      <div class="container-fluid">
+        <div class="container d-flex align-items-center">
+          <img class="navbar-brand logo" src="../img/logo.png">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+
+              <li class="nav-item">
+                <a class="nav-link active text-light fs-5" href="../index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light fs-5" href="documentosProcesos.html">
+                  Documentos y Procesos
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light fs-5" href="recursosHumanos.html" role="button"
+                  data-bs-toggle="dropdown">
+                  Recursos Humanos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-light" href="reportesSolicitudes.html ">Reportes y Solicitudes</a></li>
+                </ul>
+              </li>
+<li class="nav-item">
+                <a class="nav-link active text-light fs-5" href="marketing.html">Marketing</a>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+    <div>
+    <img src="../img/reportes y solicitudes banner.jpg" class="banner w-100">
+  </div>
+      <div class="container-fluid my-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h1 class="titulo">Reportes y Solicitudes</h1>
+          <p>¡Bienvenido Colaborador! Aquí encontrarás los documentos o recursos que necesites, además podrás realizar
+            pedidos de días ya sea por vacaciones, enfermedad, etc. </p>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6 mb-4">
+          <h2 class="titulo h4">Solicitud Por Vacaciones</h2>
+          <p class="small">En este formulario podrás solicitar tus vacaciones, recordá respetar los días máximos
+            permitidos por ley y haber comunicado tus días previamente con el líder de tu área.</p>
+
+          <div class="card"
+            style="border: 1px solid #f0f0f0; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 10px;">
+            <div class="card-body p-4">
+              <form action="#" method="POST">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="nombre" class="form-label fw-bold">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="apellido" class="form-label fw-bold">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido"
+                      required>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label for="email" class="form-label fw-bold">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="correo@empresa.com"
+                    required>
+                </div>
+
+                <hr class="text-muted">
+
+                <div class="row mb-4">
+                  <div class="col-md-6">
+                    <label for="fecha_inicio" class="form-label fw-bold text-success">Fecha de comienzo</label>
+                    <input type="date" class="form-control" id="fecha_inicio" name="fecha_inicio" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="fecha_fin" class="form-label fw-bold text-danger">Fecha de finalización</label>
+                    <input type="date" class="form-control" id="fecha_fin" name="fecha_fin" required>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label for="observaciones" class="form-label fw-bold">Observaciones</label>
+                  <textarea class="form-control" id="observaciones" name="observaciones" rows="3"
+                    placeholder="Detalles adicionales..."></textarea>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button type="reset" class="boton">Limpiar</button>
+                  <button type="submit" class="boton">Enviar Solicitud</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4 ps-5">
+          <h3 class="titulo h4">Reporte por enfermedad</h3>
+          <p class="small">Aquí podrás dejar el reporte médico y avisar cuántos días de inactividad por reposo vas a
+            tener.</p>
+
+          <div class="card"
+            style="border: 1px solid #f0f0f0; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 10px;">
+            <div class="card-header bg-white border-0 pt-4 px-4">
+              <h3 class="mb-0 h5" style="color: #2c3e50; font-weight: 700;">Solicitud de Licencia Médica</h3>
+              <p class="text-muted small">Complete los datos según su certificado médico oficial.</p>
+            </div>
+
+            <div class="card-body p-4">
+              <form action="#" method="POST" enctype="multipart/form-data">
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="nombre_enf" class="form-label fw-bold">Nombre</label>
+                    <input type="text" class="form-control" id="nombre_enf" name="nombre" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="apellido_enf" class="form-label fw-bold">Apellido</label>
+                    <input type="text" class="form-control" id="apellido_enf" name="apellido" required>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-md-7">
+                    <label for="tipo_licencia" class="form-label fw-bold">Tipo de Licencia</label>
+                    <select class="form-select" id="tipo_licencia" name="tipo_licencia" required>
+                      <option value="" selected disabled>Seleccione...</option>
+                      <option value="enfermedad_inculpable">Enfermedad Inculpable</option>
+                      <option value="accidente_trabajo">Accidente de Trabajo (ART)</option>
+                      <option value="familiar_enfermo">Cuidado de Familiar Enfermo</option>
+                    </select>
+                  </div>
+                  <div class="col-md-5">
+                    <label for="nro_certificado" class="form-label fw-bold">Certificado</label>
+                    <input type="text" class="form-control" id="nro_certificado" name="nro_certificado"
+                      placeholder="Nro/Matrícula">
+                  </div>
+                </div>
+
+                <div class="row mb-4">
+                  <div class="col-md-6">
+                    <label for="f_inicio_enf" class="form-label fw-bold text-primary">Inicio Reposo</label>
+                    <input type="date" class="form-control" id="f_inicio_enf" name="fecha_inicio" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="dias_totales" class="form-label fw-bold">Días</label>
+                    <input type="number" class="form-control" id="dias_totales" name="dias_totales" min="1" required>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label fw-bold">Adjuntar Certificado</label>
+                  <input class="form-control" type="file" name="archivo" accept="image/*,.pdf" required>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end border-top pt-3">
+                  <button type="submit" class="boton">Enviar Certificado</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+    <!-- Footer -->
+  <footer class="container-fluid bg-black">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between flex-wrap py-4">
+        <div class="logo">
+          <a href="index.html">
+            <img class="logo" src="../img/logo.png">
+          </a>
+        </div>
+        <div>
+          <ul class="footerNavegacion d-flex gap-4 mb-0">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="documentosProcesos.html">Documentos y Procesos</a></li>
+            <li><a href="recursosHumanos.html">Recursos Humanos</a></li>
+            <li><a href="reportesSolicitudes.html">Reporteria</a></li>
+             <li><a href="marketing.html">Marketing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+    
+</body>
+
+</html>

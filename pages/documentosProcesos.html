@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/estilos.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <title>Document</title>
+  <title>Documentos y Procesos</title>
 </head>
 
 <body>
@@ -33,23 +33,18 @@
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light fs-5" href="recursosHumanos.html" role="button"
-                  data-bs-toggle="dropdown">
+                <a class="nav-link text-light fs-5 d-inline-block" href="recursosHumanos.html">
                   Recursos Humanos
                 </a>
+                <a class="nav-link dropdown-toggle text-light d-inline-block" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item text-light" href="#">Directorio</a></li>
-                  <li><a class="dropdown-item text-light" href="#">Reportes y Solicitudes</a></li>
+                  <li><a class="dropdown-item" href="reportesSolicitudes.html">Reportes y Solicitudes</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light fs-5" href="marketing.html">Marketing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light fs-5" href="ofertaAcademica.html">
-                  Oferta Académica
-                </a>
-              </li>
+                <a class="nav-link active text-light fs-5" href="marketing.html">Marketing</a>
             </ul>
           </div>
         </div>
@@ -60,27 +55,92 @@
     <div>
       <img src="../img/Doc-y-procesos.jpg" class="banner">
     </div>
-  <div class="container">
-  <h1 class="titulo">Documentos y Procesos</h1>
-  <p class="lead">En esta sección encontraras todo lo necesario para desarrollar tu trabajo de manera fluida y satisfactoria</p>
-</div>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="col-12 text-center">
+        <h1 class="titulo">Documentos y Procesos</h1>
+        <p class="lead">En esta sección encontraras todo lo necesario para desarrollar tu trabajo de manera fluida y
+          satisfactoria, ante cualquier duda no te olvides de preguntar al responsable de area o comunicarte con
+          recursos humanos haciendo click aqui:</p>
+        <button class="boton">Necesito ayuda</button>
+        </div>
 
-<div class="container protocolos">
-  <h2 class="titulo">Manual Protocolar</h2>
-  <p>Aqui tienes todos los protocolos a seguir a la hora de tratar con los candidatos</p>
-  <a href="https://books.google.es/"><img class="manual" src="../img/Manual Protocolar.jpg" target="_blank"></a>
-</div>
-<div class="container">
-  <h2 class="titulo">Acceso a las Herramientas</h2>
-  <p>Encuentra aquí todas las herramientas disponibles para que te desempeñes de manera mas comoda:</p>
-  <div class="herramientas">
-    <img class="imgHerramientas" src="../img/bootmaker.png" alt="bootmaker">
-    <img class="imgHerramientas" src="../img/crm.png" alt="Odoo">
-    <img class="imgHerramientas" src="../img/educat.png" alt="Educat">
-    <img class="imgHerramientas" src="../img/salesforce.png" alt="Salesforce">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 class="titulo">Manual Protocolar</h2>
+            <p>Aqui tienes todos los protocolos a seguir a la hora de tratar con los candidatos</p>
+            <a href="https://books.google.es/"><img class="manual" src="../img/Manual Protocolar.jpg" target="_blank"
+                alt="Portada Manual Protocolar"></a>
+            <button class="boton">Ver Manuales</button>
+          </div>
+          <div class="col-lg-8 ps-5">
+            <h2 class="titulo"> Solicitudes a Soporte</h2>
+            <p>Carga aqui tu solicitud, el mismo ticket sera enviado a soporte y estaran en contacto contigo a la
+              brevedad para solucionar tu problema.</p>
+            <div class="container mt-5">
+              <div>
+                <div class="col-md-8">
+                  <div class="card shadow-sm">
+                    <div class="card-body">
+                      <h2 class="mb-4">Formulario de Solicitud</h2>
+
+                      <form action="#" method="POST">
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre"
+                              required>
+                          </div>
+
+                          <div class="col-md-6 mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" name="apellido"
+                              placeholder="Tu apellido" required>
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Correo Electrónico</label>
+                          <input type="email" class="form-control" id="email" name="email"
+                            placeholder="ejemplo@correo.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="fecha" class="form-label">Fecha de solicitud</label>
+                          <input type="date" class="form-control" id="fecha" name="fecha" required>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="consulta" class="form-label">Dejanos tu consulta o problema aquí:</label>
+                          <textarea class="form-control" id="consulta" name="consulta" rows="4"
+                            placeholder="Escribe aquí..."></textarea>
+                        </div>
+
+                        <button type="submit" class="boton">Enviar solicitud</button>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <h2 class="titulo">Acceso a las Herramientas</h2>
+          <p>Encuentra aquí todas las herramientas disponibles para que te desempeñes de manera mas comoda:</p>
+          <div class="herramientas">
+            <a href="#"> <img class="imgHerramientas" src="../img/bootmaker.png" alt="bootmaker"> </a>
+           <a href="#"> <img class="imgHerramientas" src="../img/crm.png" alt="Odoo"> </a>
+           <a href="#"> <img class="imgHerramientas" src="../img/educat.png" alt="Educat"> </a>
+           <a href="#"><img class="imgHerramientas" src="../img/salesforce.png" alt="Salesforce"> </a> 
+          </div>
+        </div>
+  </main>
   </div>
-</div>
-</main>
+  </div>
+  </div>
   <!-- Footer -->
   <footer class="container-fluid bg-black">
     <div class="container">
@@ -92,17 +152,17 @@
         </div>
         <div>
           <ul class="footerNavegacion d-flex gap-4 mb-0">
+            <li><a href="../index.html">Inicio</a></li>
             <li><a href="documentosProcesos.html">Documentos y Procesos</a></li>
-            <li><a href="marketing.html">Marketing</a></li>
-            <li><a href="ofertaAcademica.html">Oferta Academica</a></li>
-            <li><a href="operativa.html">Operativa</a></li>
             <li><a href="recursosHumanos.html">Recursos Humanos</a></li>
-            <li><a href="reporteria.html">Reporteria</a></li>
+            <li><a href="reportesSolicitudes.html">Reporteria</a></li>
+             <li><a href="marketing.html">Marketing</a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>

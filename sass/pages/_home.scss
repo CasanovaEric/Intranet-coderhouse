@@ -3,6 +3,7 @@
 //mixin 
 @use "../utilities/mixin" as *; 
 
+
 .fondoMenu {
     background-color: $color-principal;
 }
@@ -28,7 +29,6 @@
 
 .titulo {
     padding-top: 50px;
-    padding-bottom: 25px;
 }
 
 .carrusel {
@@ -116,3 +116,23 @@ tfoot td {
     @include boton;
 }
 
+
+.fondoGris {
+    @include fondoGris;
+}
+
+.footer{
+    @include footer;
+}
+
+.footerNavegacion {
+    @include footerNavegacion
+}
+
+.dropdown {
+    @include dropdown;
+}
+
+.banner {
+    @include banner;
+}
